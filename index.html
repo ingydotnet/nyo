@@ -1,0 +1,590 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="YAML Ain't Markup Language">
+      
+      
+        <meta name="author" content="YAML">
+      
+      
+        <link rel="canonical" href="https://yaml.org.yaml.in/">
+      
+      
+      
+      
+      <link rel="icon" href="assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>YAML Ain't Markup Language - yaml.org</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="yaml.org" class="md-header__button md-logo" aria-label="yaml.org" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About YAML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="resources.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  YAML Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="specification.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  YAML Spec
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="community.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Community
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="yaml.org" class="md-nav__button md-logo" aria-label="yaml.org" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    yaml.org
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ingydotnet/nyo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ingydotnet/nyo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About YAML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resources.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    YAML Projects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="specification.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    YAML Spec
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="community.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+  <h1>YAML Ain't Markup Language</h1>
+
+<pre>
+%YAML 1.2
+---
+YAML: YAML Ain't Markup Language™
+
+What It Is:
+  YAML is a human-friendly data serialization
+  language for all programming languages.
+
+YAML Resources:
+  YAML Specifications:
+  - YAML 1.2:
+    - Revision 1.2.2      # Oct 1, 2021 *New*
+    - Revision 1.2.1      # Oct 1, 2009
+    - Revision 1.2.0      # Jul 21, 2009
+  - YAML 1.1
+  - YAML 1.0
+
+  YAML Matrix Chat:  '#chat:yaml.io'     # Our New Group Chat Room!
+  YAML IRC Channel:  libera.chat#yaml    # The old chat
+  YAML News:         twitter.com/yamlnews
+  YAML Mailing List: yaml-core           # Obsolete, but historical
+
+  YAML on GitHub:                        # github.com/yaml/
+    YAML Specs:        yaml-spec/
+    YAML 1.2 Grammar:  yaml-grammar/
+    YAML Test Suite:   yaml-test-suite/
+    YAML Issues:       issues/
+
+  YAML Reference Parsers:
+  - Generated Reference Parsers
+  - YPaste Interactive Parser
+
+  YAML Test Matrix:   matrix.yaml.io
+
+YAML Frameworks and Tools:
+  C/C++:
+  - libfyaml      # "C" YAML 1.2 processor (YTS)
+  - libyaml       # "C" Fast YAML 1.1 (YTS)
+  - libcyaml      # YAML de/serialization of C data (using libyaml)
+  - yaml-cpp      # C++ YAML 1.2 implementation
+
+  Crystal:
+  - YAML          # YAML 1.1 from the standard library
+
+  C#/.NET:
+  - YamlDotNet    # YAML 1.1/(1.2) library + serialization (YTS)
+  - yaml-net      # YAML 1.1 library
+
+  D:
+  - D-YAML        # YAML 1.1 library w/ official community support (YTS)
+
+  Dart:
+  - yaml          # YAML package for Dart
+
+  Delphi:
+  - Neslib.Yaml   # YAML 1.1 Delphi binding to libyaml (YTS)
+
+  Elixir:
+  - yaml-elixir   # YAML support for the Elixir language
+
+  Erlang:
+  - yamerl        # YAML support for the Erlang language
+
+  Golang:
+  - Go-yaml       # YAML support for the Go language
+  - Go-gypsy      # Simplified YAML parser written in Go
+  - goccy/go-yaml # YAML 1.2 implementation in pure Go
+
+  Haskell:
+  - HsYAML         # YAML 1.2 implementation in pure Haskell (YTS)
+  - YamlReference  # Haskell 1.2 reference parser
+  - yaml           # YAML 1.1 Haskell framework (based on libyaml)
+
+  Java:
+  - SnakeYAML Engine  # Java 8+ / YAML 1.2
+  - SnakeYAML         # Java 5 / YAML 1.1
+  - YamlBeans         # To/from JavaBeans. YAML 1.0/1.1
+  - eo-yaml           # YAML 1.2 for Java 8. Packaged as a Module (Java 9+)
+  - Chronicle-Wire    # Java Implementation
+
+  JavaScript:
+  - yaml          # JavaScript parser/stringifier (YAML 1.2, 1.1) (YTS)
+  - js-yaml       # Native PyYAML port to JavaScript (Demo)
+
+  Nim:
+  - NimYAML       # YAML 1.2 implementation in pure Nim (YTS)
+
+  OCaml:
+  - ocaml-yaml    # YAML 1.1/1.2 via libyaml bindings
+  - ocaml-syck    # YAML 1.0 via syck bindings
+
+  Perl Modules:
+  - YAML          # Pure Perl YAML 1.0 Module
+  - YAML::XS      # Binding to libyaml
+  - YAML::Syck    # Binding to libsyck
+  - YAML::Tiny    # A small YAML subset module
+  - YAML::PP      # A YAML 1.2/1.1 processor (YTS)
+
+  PHP:
+  - The Yaml Component  # Symfony Yaml Component (YAML 1.2)
+  - php-yaml      # libyaml bindings (YAML 1.1)
+  - syck          # syck bindings (YAML 1.0)
+  - spyc          # yaml loader/dumper (YAML 1.?)
+
+  Python:
+  - PyYAML        # YAML 1.1, pure python and libyaml binding
+  - ruamel.yaml   # YAML 1.2, update of PyYAML; comments round-trip
+  - PySyck        # YAML 1.0, syck binding
+  - strictyaml    # Restricted YAML subset
+
+  R:
+  - R YAML        # libyaml wrapper
+
+  Raku:
+  - YAMLish       # Port of YAMLish to Raku
+  - YAML::Parser::LibYAML  # LibYAML wrapper
+
+  Ruby:
+  - psych         # libyaml wrapper (in Ruby core for 1.9.2)
+  - RbYaml        # YAML 1.1 (PyYAML Port)
+  - yaml4r        # YAML 1.0, standard library syck binding
+
+  Rust:
+  - yaml-rust     # YAML 1.2 implementation in pure Rust
+  - serde-yaml    # YAML de/serialization of structs
+
+  Shell:
+  - parse_yaml    # Simple YAML parser for Bash using sed and awk
+  - shyaml        # Read YAML files - jq style
+
+  Swift:
+  - Yams          # libyaml wrapper
+
+  Others:
+  - yamlvim       # YAML dumper/emitter in pure vimscript
+
+Related Projects:
+  - Rx            # Multi-Language Schemata Tool for JSON/YAML
+  - Kwalify       # Ruby Schemata Tool for JSON/YAML 
+  - pyKwalify     # Python Schemata Tool for JSON/YAML
+  - yatools.net   # Visual Studio editor for YAML
+  - JSON          # Official JSON Website
+  - Pygments      # Python language Syntax Colorizer /w YAML support
+  - yamllint      # YAML Linter based on PyYAML
+  - YAML Diff     # Semantically compare two YAML documents
+  - JSON Schema   # YAML-compliant JSON standard for data validation
+
+# Edit This Website
+...
+</pre>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 YAML
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.copy", "content.code.annotate"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
